@@ -1,8 +1,14 @@
 import tkinter as tk
+import re
 
 def calcular():
+    expresion = entry.get().replace(" ", "")  # Eliminar espacios en blanco
+    expresion = expresion.replace("+-", "-")  # Corregir signo de resta 
+    expresion = re.sub(r'\b0+(\d+)', r'\1', expresion) # Eliminar ceros a la izquierda de los números
+
+
     try:
-        resultado = eval(entry.get())
+        resultado = eval(expresion)
         resultado = round(resultado, 4)
         entry.delete(0, tk.END)
         entry.insert(tk.END, str(resultado))
