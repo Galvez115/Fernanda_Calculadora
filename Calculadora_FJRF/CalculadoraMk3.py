@@ -4,7 +4,7 @@ import re
 def validar(event):
     if event.char not in '0123456789+-*/.':
         return "break"
-    if event.char == '.' and '.' in entry.get():
+    if event.char == '.' and '.' in entry.get() and entry.get()[-1] in '.':
         return "break"
     if event.char in '+-*/' and entry.get() and entry.get()[-1] in '+-*/':
         return "break"
@@ -12,7 +12,7 @@ def validar(event):
 def validar_boton(texto):
     if texto in '+-*/' and entry.get() and entry.get()[-1] in '+-*/':
         return
-    if texto == '.' and '.' in entry.get():
+    if texto == '.' and '.' in entry.get() and entry.get()[-1] in '.':
         return
     entry.insert(tk.END, texto)
 
