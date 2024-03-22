@@ -7,7 +7,7 @@
 4. Desarrollo de división
 
 ## Estimaciones
-- Suma: [Tiempo estimado]
-- Resta: [Tiempo estimado]
-- Multiplicación: [Tiempo estimado]
-- División: [Tiempo estimado]
+- Suma: [29-febrero-2024]
+- Resta: [1-marzo-2024]
+- Multiplicación: [2-marzo-2024]
+- División: [3-marzo-2024]
